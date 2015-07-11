@@ -1,6 +1,6 @@
-git problem
-
-1\ ssh-keygen -t rsa -b 4096 -C "wangkai@ssicss.com"
-2\modify .git/config
-	http:/github.com/ssicss/work_dir.git   ->   git@github.com:ssicss/word_dir.git
-3\add ssh pubkey to "github.com"
+2015.7.11: git problem
+		1\ ssh-keygen -t rsa -b 4096 -C "wangkai@ssicss.com"
+		2\modify .git/config
+			http:/github.com/ssicss/work_dir.git   ->   git@github.com:ssicss/word_dir.git
+		3\add ssh pubkey to "github.com"
+2015.7.11: hdmi1.4b
