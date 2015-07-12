@@ -1,0 +1,38 @@
+# CMake generated Testfile for 
+# Source directory: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests
+# Build directory: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(CMake.List "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/ListTest.cmake")
+add_test(CMake.VariableWatch "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/VariableWatchTest.cmake")
+add_test(CMake.Include "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/IncludeTest.cmake")
+add_test(CMake.FindBase "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/FindBaseTest.cmake")
+add_test(CMake.Toolchain "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/ToolchainTest.cmake")
+add_test(CMake.GetFilenameComponentRealpath "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/GetFilenameComponentRealpathTest.cmake")
+add_test(CMake.Version "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/VersionTest.cmake")
+add_test(CMake.Message "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/MessageTest.cmake")
+add_test(CMake.File "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/FileTest.cmake")
+add_test(CMake.SeparateArguments "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/SeparateArgumentsTest.cmake")
+add_test(CMake.ImplicitLinkInfo "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/ImplicitLinkInfoTest.cmake")
+add_test(CMake.ModuleNotices "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/ModuleNoticesTest.cmake")
+add_test(CMake.GetProperty "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/GetPropertyTest.cmake")
+add_test(CMake.If "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/IfTest.cmake")
+add_test(CMake.String "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/StringTest.cmake")
+add_test(CMake.Math "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/MathTest.cmake")
+add_test(CMake.CMakeMinimumRequired "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/CMakeMinimumRequiredTest.cmake")
+add_test(CMake.CompilerIdVendor "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/CompilerIdVendorTest.cmake")
+add_test(CMake.ProcessorCount "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-DKWSYS_TEST_EXE=/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/cmsysTestsCxx" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/ProcessorCountTest.cmake")
+add_test(CMake.PushCheckState "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/PushCheckStateTest.cmake")
+add_test(CMake.While "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/WhileTest.cmake")
+add_test(CMake.CMakeHostSystemInformation "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/CMakeHostSystemInformationTest.cmake")
+add_test(CMake.FileDownload "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/FileDownloadTest.cmake")
+set_tests_properties(CMake.FileDownload PROPERTIES  PASS_REGULAR_EXPRESSION "file already exists with expected MD5 sum")
+add_test(CMake.FileDownloadBadHash "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/FileDownloadBadHashTest.cmake")
+set_tests_properties(CMake.FileDownloadBadHash PROPERTIES  WILL_FAIL "TRUE")
+add_test(CMake.FileUpload "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/FileUploadTest.cmake")
+add_test(CMake.ELF "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/ELFTest.cmake")
+add_test(CMake.EndStuff "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-Ddir:STRING=/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/EndStuffTest" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/EndStuffTest.cmake")
+add_test(CMake.GetPrerequisites "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-DCTEST_CONFIGURATION_TYPE:STRING=\${CTEST_CONFIGURATION_TYPE}" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/GetPrerequisitesTest.cmake")
+add_test(CMake.PolicyCheck "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-DCMake_BINARY_DIR:PATH=/home/ssicss/workhome/tmp/cmake-3.3.0-rc3" "-DCMake_SOURCE_DIR:PATH=/home/ssicss/workhome/tmp/cmake-3.3.0-rc3" "-DGIT_EXECUTABLE:STRING=/usr/bin/git" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/PolicyCheckTest.cmake")
+add_test(CMake.CheckSourceTree "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/bin/cmake" "-DCMake_BINARY_DIR:PATH=/home/ssicss/workhome/tmp/cmake-3.3.0-rc3" "-DCMake_SOURCE_DIR:PATH=/home/ssicss/workhome/tmp/cmake-3.3.0-rc3" "-DGIT_EXECUTABLE:STRING=/usr/bin/git" "-DHOME:STRING=/home/ssicss" "-P" "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeTests/CheckSourceTreeTest.cmake")

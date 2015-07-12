@@ -1,0 +1,2 @@
+/home/ssicss/workhome/tmp/min-cscope/obj/src/CMakeFiles/min-cscope.dir
+/home/ssicss/workhome/tmp/min-cscope/obj/sort/CMakeFiles/sort.dir

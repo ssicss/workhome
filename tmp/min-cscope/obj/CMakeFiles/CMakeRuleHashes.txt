@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+fab34b44b7b6d64fd68324179b6b553b src/egrep.c
+c982b5c2ba3ac825803c6ff2f08b61e7 src/fscanner.c

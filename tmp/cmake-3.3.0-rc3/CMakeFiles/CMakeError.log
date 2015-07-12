@@ -1,0 +1,3252 @@
+Determining if the environ exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_742f9/fast"
+gmake -f CMakeFiles/cmTC_742f9.dir/build.make CMakeFiles/cmTC_742f9.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_742f9.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_742f9.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：‘environ’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_742f9.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_742f9/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef environ
+  return ((int*)(&environ))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Checking for non-standard argument to stl allocator<>::max_size failed to compile with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_83afc/fast"
+gmake -f CMakeFiles/cmTC_83afc.dir/build.make CMakeFiles/cmTC_83afc.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_83afc.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT  -o CMakeFiles/cmTC_83afc.dir/kwsysPlatformTestsCXX.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:256: 错误：对‘std::allocator<char>::max_size(unsigned int) const’的调用没有匹配的函数
+/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../../include/c++/4.4.5/ext/new_allocator.h:98: 附注：备选为： size_t __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char]
+gmake[1]: *** [CMakeFiles/cmTC_83afc.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_83afc/fast] 错误 2
+
+
+Checking whether "<>" is needed for template friends failed to compile with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e020a/fast"
+gmake -f CMakeFiles/cmTC_e020a.dir/build.make CMakeFiles/cmTC_e020a.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e020a.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS  -o CMakeFiles/cmTC_e020a.dir/kwsysPlatformTestsCXX.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:141: 警告：友元声明‘int f(A<T>&)’声明了一个非模板函数
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:141: 附注：(如果这不是您原来的想法，请确定此函数模板已经声明过，并在这里的函数名后面添加 <>)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int f(A<T>&) [with T = int]’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:147:   instantiated from here
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:143: 错误：‘int A<int>::x’是私有的
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:146: 错误：在此上下文中
+gmake[1]: *** [CMakeFiles/cmTC_e020a.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_e020a/fast] 错误 2
+
+
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_59819/fast"
+gmake -f CMakeFiles/cmTC_59819.dir/build.make CMakeFiles/cmTC_59819.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59819.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS___INT64  -o CMakeFiles/cmTC_59819.dir/kwsysPlatformTestsCXX.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:126: 错误：‘__int64’没有命名一个类型
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:129: 错误：‘__int64’在此作用域中尚未声明
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:129: 错误：expected ‘;’ before ‘n’
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:130: 错误：‘n’在此作用域中尚未声明
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:130: 错误：‘f’在此作用域中尚未声明
+gmake[1]: *** [CMakeFiles/cmTC_59819.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_59819/fast] 错误 2
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_faab4/fast"
+gmake -f CMakeFiles/cmTC_faab4.dir/build.make CMakeFiles/cmTC_faab4.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_faab4.dir/KWSYS_SIZEOF___INT64.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_faab4.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:19: 错误：‘__int64’未声明(不在函数内)
+gmake[1]: *** [CMakeFiles/cmTC_faab4.dir/KWSYS_SIZEOF___INT64.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_faab4/fast] 错误 2
+
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e9025/fast"
+gmake -f CMakeFiles/cmTC_e9025.dir/build.make CMakeFiles/cmTC_e9025.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9025.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -o CMakeFiles/cmTC_e9025.dir/kwsysPlatformTestsCXX.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:450: 错误：‘environ’在此作用域中尚未声明
+gmake[1]: *** [CMakeFiles/cmTC_e9025.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_e9025/fast] 错误 2
+
+
+Checking whether CXX compiler has _atoi64 failed to compile with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2ba91/fast"
+gmake -f CMakeFiles/cmTC_2ba91.dir/build.make CMakeFiles/cmTC_2ba91.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2ba91.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS__ATOI64  -o CMakeFiles/cmTC_2ba91.dir/kwsysPlatformTestsCXX.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/kwsysPlatformTestsCXX.cxx:493: 错误：‘_atoi64’在此作用域中尚未声明
+gmake[1]: *** [CMakeFiles/cmTC_2ba91.dir/kwsysPlatformTestsCXX.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_2ba91/fast] 错误 2
+
+
+Determining if the function connect exists in the socket;dl failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_01c5e/fast"
+gmake -f CMakeFiles/cmTC_01c5e.dir/build.make CMakeFiles/cmTC_01c5e.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_01c5e.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_01c5e.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_01c5e
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_01c5e.dir/link.txt --verbose=1
+/usr/bin/gcc    -w -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_01c5e.dir/CheckFunctionExists.c.o  -o cmTC_01c5e -rdynamic -lsocket -ldl 
+/usr/bin/ld: cannot find -lsocket
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_01c5e] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_01c5e/fast] 错误 2
+
+
+Determining if the function recv exists in the network;dl failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2626f/fast"
+gmake -f CMakeFiles/cmTC_2626f.dir/build.make CMakeFiles/cmTC_2626f.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2626f.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=recv   -o CMakeFiles/cmTC_2626f.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2626f
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_2626f.dir/link.txt --verbose=1
+/usr/bin/gcc    -w -DCHECK_FUNCTION_EXISTS=recv    CMakeFiles/cmTC_2626f.dir/CheckFunctionExists.c.o  -o cmTC_2626f -rdynamic -lnetwork -ldl 
+/usr/bin/ld: cannot find -lnetwork
+collect2: ld 返回 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTC_2626f] 错误 1
+gmake: *** [cmTC_2626f/fast] 错误 2
+
+
+Determining if files stdio.h;inttypes.h;sys/filio.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_26508/fast"
+gmake -f CMakeFiles/cmTC_26508.dir/build.make CMakeFiles/cmTC_26508.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26508.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_26508.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:23: 错误：sys/filio.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_26508.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_26508/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/sockio.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_0eba6/fast"
+gmake -f CMakeFiles/cmTC_0eba6.dir/build.make CMakeFiles/cmTC_0eba6.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0eba6.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_0eba6.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:10:24: 错误：sys/sockio.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_0eba6.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_0eba6/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/sockio.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;sys/utime.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3c346/fast"
+gmake -f CMakeFiles/cmTC_3c346.dir/build.make CMakeFiles/cmTC_3c346.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c346.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_3c346.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:15:23: 错误：sys/utime.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_3c346.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3c346/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;crypto.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c4011/fast"
+gmake -f CMakeFiles/cmTC_c4011.dir/build.make CMakeFiles/cmTC_c4011.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4011.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_c4011.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:19:20: 错误：crypto.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_c4011.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c4011/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <crypto.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;des.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_49925/fast"
+gmake -f CMakeFiles/cmTC_49925.dir/build.make CMakeFiles/cmTC_49925.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49925.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_49925.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:19:17: 错误：des.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_49925.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_49925/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <des.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;io.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_47bfe/fast"
+gmake -f CMakeFiles/cmTC_47bfe.dir/build.make CMakeFiles/cmTC_47bfe.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47bfe.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_47bfe.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:27:16: 错误：io.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_47bfe.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_47bfe/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;krb.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8b83e/fast"
+gmake -f CMakeFiles/cmTC_8b83e.dir/build.make CMakeFiles/cmTC_8b83e.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b83e.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_8b83e.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:27:17: 错误：krb.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_8b83e.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_8b83e/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;pem.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_29c88/fast"
+gmake -f CMakeFiles/cmTC_29c88.dir/build.make CMakeFiles/cmTC_29c88.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29c88.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_29c88.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:34:17: 错误：pem.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_29c88.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_29c88/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;rsa.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1527d/fast"
+gmake -f CMakeFiles/cmTC_1527d.dir/build.make CMakeFiles/cmTC_1527d.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1527d.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_1527d.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:36:17: 错误：rsa.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_1527d.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_1527d/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <rsa.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e32d6/fast"
+gmake -f CMakeFiles/cmTC_e32d6.dir/build.make CMakeFiles/cmTC_e32d6.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e32d6.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_e32d6.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:39:17: 错误：ssl.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_e32d6.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_e32d6/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;stropts.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2ce05/fast"
+gmake -f CMakeFiles/cmTC_2ce05.dir/build.make CMakeFiles/cmTC_2ce05.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ce05.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_2ce05.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:45:21: 错误：stropts.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_2ce05.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_2ce05/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termio.h;termios.h;time.h;tld.h;unistd.h;utime.h;x509.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_edf04/fast"
+gmake -f CMakeFiles/cmTC_edf04.dir/build.make CMakeFiles/cmTC_edf04.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edf04.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_edf04.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:51:18: 错误：x509.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_edf04.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_edf04/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <x509.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termio.h;termios.h;time.h;tld.h;unistd.h;utime.h;process.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_48135/fast"
+gmake -f CMakeFiles/cmTC_48135.dir/build.make CMakeFiles/cmTC_48135.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48135.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_48135.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:51:21: 错误：process.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_48135.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_48135/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <process.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;inttypes.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/resource.h;sys/select.h;sys/socket.h;sys/stat.h;sys/time.h;sys/types.h;sys/uio.h;sys/un.h;alloca.h;arpa/inet.h;arpa/tftp.h;assert.h;err.h;errno.h;fcntl.h;gssapi/gssapi.h;gssapi/gssapi_generic.h;gssapi/gssapi_krb5.h;idn-free.h;ifaddrs.h;libgen.h;limits.h;locale.h;net/if.h;netdb.h;netinet/in.h;netinet/tcp.h;poll.h;pwd.h;setjmp.h;sgtty.h;signal.h;stdbool.h;stdint.h;stdio.h;stdlib.h;string.h;strings.h;termio.h;termios.h;time.h;tld.h;unistd.h;utime.h;stddef.h;dlfcn.h;malloc.h;memory.h;netinet/if_ether.h;stdint.h;sockio.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ea62b/fast"
+gmake -f CMakeFiles/cmTC_ea62b.dir/build.make CMakeFiles/cmTC_ea62b.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea62b.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_ea62b.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:57:20: 错误：sockio.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_ea62b.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ea62b/fast] 错误 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sockio.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_81178/fast"
+gmake -f CMakeFiles/cmTC_81178.dir/build.make CMakeFiles/cmTC_81178.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81178.dir/SIZEOF___INT64.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_81178.dir/SIZEOF___INT64.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:19: 错误：‘__int64’未声明(不在函数内)
+gmake[1]: *** [CMakeFiles/cmTC_81178.dir/SIZEOF___INT64.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_81178/fast] 错误 2
+
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c861d/fast"
+gmake -f CMakeFiles/cmTC_c861d.dir/build.make CMakeFiles/cmTC_c861d.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c861d.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_c861d.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘stricmp’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_c861d.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c861d/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e4a48/fast"
+gmake -f CMakeFiles/cmTC_e4a48.dir/build.make CMakeFiles/cmTC_e4a48.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4a48.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_e4a48.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘strcmpi’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_e4a48.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_e4a48/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ecd69/fast"
+gmake -f CMakeFiles/cmTC_ecd69.dir/build.make CMakeFiles/cmTC_ecd69.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ecd69.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_ecd69.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘strncmpi’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_ecd69.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ecd69/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the inet_ntoa_r exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9ec7a/fast"
+gmake -f CMakeFiles/cmTC_9ec7a.dir/build.make CMakeFiles/cmTC_9ec7a.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ec7a.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_9ec7a.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘inet_ntoa_r’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_9ec7a.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_9ec7a/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_ntoa_r
+  return ((int*)(&inet_ntoa_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the closesocket exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fd14b/fast"
+gmake -f CMakeFiles/cmTC_fd14b.dir/build.make CMakeFiles/cmTC_fd14b.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd14b.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_fd14b.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘closesocket’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_fd14b.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_fd14b/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getpass_r exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bdacc/fast"
+gmake -f CMakeFiles/cmTC_bdacc.dir/build.make CMakeFiles/cmTC_bdacc.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bdacc.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_bdacc.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘getpass_r’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_bdacc.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_bdacc/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpass_r
+  return ((int*)(&getpass_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2a06b/fast"
+gmake -f CMakeFiles/cmTC_2a06b.dir/build.make CMakeFiles/cmTC_2a06b.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a06b.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_2a06b.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘strlcat’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_2a06b.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_2a06b/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _strtoi64 exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3aebf/fast"
+gmake -f CMakeFiles/cmTC_3aebf.dir/build.make CMakeFiles/cmTC_3aebf.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3aebf.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_3aebf.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：‘_strtoi64’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:64: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_3aebf.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3aebf/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <inttypes.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/resource.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/un.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <arpa/tftp.h>
+#include <assert.h>
+#include <err.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gssapi/gssapi_krb5.h>
+#include <idn-free.h>
+#include <ifaddrs.h>
+#include <libgen.h>
+#include <limits.h>
+#include <locale.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <poll.h>
+#include <pwd.h>
+#include <setjmp.h>
+#include <sgtty.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <termio.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <utime.h>
+#include <stddef.h>
+#include <dlfcn.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netinet/if_ether.h>
+#include <stdint.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtoi64
+  return ((int*)(&_strtoi64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bf7a9/fast"
+gmake -f CMakeFiles/cmTC_bf7a9.dir/build.make CMakeFiles/cmTC_bf7a9.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf7a9.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_bf7a9.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:498: 错误：‘FIONBIO’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:498: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:498: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_bf7a9.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_bf7a9/fast] 错误 2
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3bdac/fast"
+gmake -f CMakeFiles/cmTC_3bdac.dir/build.make CMakeFiles/cmTC_3bdac.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3bdac.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_3bdac.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_3bdac
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_3bdac.dir/link.txt --verbose=1
+/usr/bin/gcc    -w -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H    CMakeFiles/cmTC_3bdac.dir/CurlTests.c.o  -o cmTC_3bdac -rdynamic -lidn -ldl 
+CMakeFiles/cmTC_3bdac.dir/CurlTests.c.o: In function `main':
+CurlTests.c:(.text+0x21): undefined reference to `IoctlSocket'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_3bdac] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3bdac/fast] 错误 2
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_af2ae/fast"
+gmake -f CMakeFiles/cmTC_af2ae.dir/build.make CMakeFiles/cmTC_af2ae.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af2ae.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_af2ae.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:554: 错误：‘FIONBIO’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:554: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:554: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_af2ae.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_af2ae/fast] 错误 2
+
+Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2becb/fast"
+gmake -f CMakeFiles/cmTC_2becb.dir/build.make CMakeFiles/cmTC_2becb.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2becb.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_2becb.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:581: 错误：‘FIONBIO’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:581: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:581: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_2becb.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_2becb/fast] 错误 2
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a74e1/fast"
+gmake -f CMakeFiles/cmTC_a74e1.dir/build.make CMakeFiles/cmTC_a74e1.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a74e1.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_a74e1.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:677: 错误：‘SO_NONBLOCK’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:677: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:677: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_a74e1.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_a74e1/fast] 错误 2
+
+Performing Curl Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fceaf/fast"
+gmake -f CMakeFiles/cmTC_fceaf.dir/build.make CMakeFiles/cmTC_fceaf.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fceaf.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_fceaf.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_fceaf
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_fceaf.dir/link.txt --verbose=1
+/usr/bin/gcc    -w -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H    CMakeFiles/cmTC_fceaf.dir/CurlTests.c.o  -o cmTC_fceaf -rdynamic -lidn -ldl 
+/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crt1.o: In function `_start':
+(.text+0x18): undefined reference to `main'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_fceaf] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_fceaf/fast] 错误 2
+
+Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6028f/fast"
+gmake -f CMakeFiles/cmTC_6028f.dir/build.make CMakeFiles/cmTC_6028f.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6028f.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_O_NONBLOCK  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_6028f.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_6028f
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_6028f.dir/link.txt --verbose=1
+/usr/bin/gcc    -w -DHAVE_O_NONBLOCK  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H    CMakeFiles/cmTC_6028f.dir/CurlTests.c.o  -o cmTC_6028f -rdynamic -lidn -ldl 
+/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crt1.o: In function `_start':
+(.text+0x18): undefined reference to `main'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_6028f] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_6028f/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_5 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ff269/fast"
+gmake -f CMakeFiles/cmTC_ff269.dir/build.make CMakeFiles/cmTC_ff269.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff269.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_5  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_ff269.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:85: 错误：‘hdata’的存储大小未知
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:90: 错误：提供给函数‘gethostbyaddr_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_ff269.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ff269/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_7 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6812c/fast"
+gmake -f CMakeFiles/cmTC_6812c.dir/build.make CMakeFiles/cmTC_6812c.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6812c.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_7  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_6812c.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:136: 错误：提供给函数‘gethostbyaddr_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_6812c.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_6812c/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_5_REENTRANT failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_77830/fast"
+gmake -f CMakeFiles/cmTC_77830.dir/build.make CMakeFiles/cmTC_77830.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77830.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_5_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_77830.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:104: 错误：‘q’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:104: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:104: 错误：所在的函数内也只报告一次。)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:105: 错误：expected ‘;’ before ‘int’
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:107: 错误：‘hdata’的存储大小未知
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:112: 错误：‘type’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:112: 错误：提供给函数‘gethostbyaddr_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_77830.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_77830/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_7_REENTRANT failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_227b4/fast"
+gmake -f CMakeFiles/cmTC_227b4.dir/build.make CMakeFiles/cmTC_227b4.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_227b4.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYADDR_R_7_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_227b4.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:161: 错误：提供给函数‘gethostbyaddr_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_227b4.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_227b4/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ac6b0/fast"
+gmake -f CMakeFiles/cmTC_ac6b0.dir/build.make CMakeFiles/cmTC_ac6b0.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac6b0.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_ac6b0.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:228: 错误：‘data’的存储大小未知
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:232: 错误：提供给函数‘gethostbyname_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_ac6b0.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ac6b0/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1fc90/fast"
+gmake -f CMakeFiles/cmTC_1fc90.dir/build.make CMakeFiles/cmTC_1fc90.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1fc90.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_1fc90.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:271: 错误：提供给函数‘gethostbyname_r’的实参太少
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTC_1fc90.dir/CurlTests.c.o] 错误 1
+gmake: *** [cmTC_1fc90/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_eb200/fast"
+gmake -f CMakeFiles/cmTC_eb200.dir/build.make CMakeFiles/cmTC_eb200.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb200.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_eb200.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:249: 错误：‘data’的存储大小未知
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:253: 错误：提供给函数‘gethostbyname_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_eb200.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_eb200/fast] 错误 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7bf95/fast"
+gmake -f CMakeFiles/cmTC_7bf95.dir/build.make CMakeFiles/cmTC_7bf95.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7bf95.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_7bf95.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:290: 错误：提供给函数‘gethostbyname_r’的实参太少
+gmake[1]: *** [CMakeFiles/cmTC_7bf95.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_7bf95/fast] 错误 2
+
+Performing Curl Test HAVE_INET_NTOA_R_DECL failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7ce86/fast"
+gmake -f CMakeFiles/cmTC_7ce86.dir/build.make CMakeFiles/cmTC_7ce86.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ce86.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_INET_NTOA_R_DECL  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_7ce86.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:418: 错误：‘inet_ntoa_r’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:418: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:418: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_7ce86.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_7ce86/fast] 错误 2
+
+Performing Curl Test HAVE_INET_NTOA_R_DECL_REENTRANT failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6c781/fast"
+gmake -f CMakeFiles/cmTC_6c781.dir/build.make CMakeFiles/cmTC_6c781.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c781.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_INET_NTOA_R_DECL_REENTRANT  -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERR_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_GSSAPI_GSSAPI_H -DHAVE_GSSAPI_GSSAPI_GENERIC_H -DHAVE_GSSAPI_GSSAPI_KRB5_H -DHAVE_IDN_FREE_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LIMITS_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SGTTY_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIO_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_TLD_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -DHAVE_IDNA_H   -o CMakeFiles/cmTC_6c781.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:433: 错误：‘inet_ntoa_r’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:433: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c:433: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_6c781.dir/CurlTests.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_6c781/fast] 错误 2
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e62dc/fast"
+gmake -f CMakeFiles/cmTC_e62dc.dir/build.make CMakeFiles/cmTC_e62dc.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e62dc.dir/CurlTests.c.o
+/usr/bin/gcc   -w -DHAVE_GLIBC_STRERROR_R   -o CMakeFiles/cmTC_e62dc.dir/CurlTests.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTC_e62dc
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_e62dc.dir/link.txt --verbose=1
+/usr/bin/gcc    -w -DHAVE_GLIBC_STRERROR_R    CMakeFiles/cmTC_e62dc.dir/CurlTests.c.o  -o cmTC_e62dc -rdynamic -lidn 
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+There was a problem running this test
+
+
+Determining size of curl_off_t failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e326f/fast"
+gmake -f CMakeFiles/cmTC_e326f.dir/build.make CMakeFiles/cmTC_e326f.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e326f.dir/SIZEOF_CURL_OFF_T.c.o
+/usr/bin/gcc   -w -D_FILE_OFFSET_BITS=64   -o CMakeFiles/cmTC_e326f.dir/SIZEOF_CURL_OFF_T.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF_CURL_OFF_T.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF_CURL_OFF_T.c:4:82: 错误：/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/curl/curl.h：没有那个文件或目录
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF_CURL_OFF_T.c:20: 错误：‘curl_off_t’未声明(不在函数内)
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTC_e326f.dir/SIZEOF_CURL_OFF_T.c.o] 错误 1
+gmake: *** [cmTC_e326f/fast] 错误 2
+
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/SIZEOF_CURL_OFF_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Utilities/cmcurl/curl/curl.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(curl_off_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test HAVE_RESTRICT failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7eefb/fast"
+gmake -f CMakeFiles/cmTC_7eefb.dir/build.make CMakeFiles/cmTC_7eefb.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7eefb.dir/src.c.o
+/usr/bin/gcc   -DHAVE_RESTRICT   -o CMakeFiles/cmTC_7eefb.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:1: 错误：expected ‘;’, ‘,’ or ‘)’ before ‘x’
+gmake[1]: *** [CMakeFiles/cmTC_7eefb.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_7eefb/fast] 错误 2
+
+Source file was:
+int test (void *restrict x);
+int main (void) {return 0;}
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fc968/fast"
+gmake -f CMakeFiles/cmTC_fc968.dir/build.make CMakeFiles/cmTC_fc968.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc968.dir/TestEndianess.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_fc968.dir/TestEndianess.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_fc968
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_fc968.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_fc968.dir/TestEndianess.c.o  -o cmTC_fc968 -rdynamic 
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_31762/fast"
+gmake -f CMakeFiles/cmTC_31762.dir/build.make CMakeFiles/cmTC_31762.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31762.dir/__INT64.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_31762.dir/__INT64.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/__INT64.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/__INT64.c:19: 错误：‘__int64’未声明(不在函数内)
+gmake[1]: *** [CMakeFiles/cmTC_31762.dir/__INT64.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_31762/fast] 错误 2
+
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/__INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_35027/fast"
+gmake -f CMakeFiles/cmTC_35027.dir/build.make CMakeFiles/cmTC_35027.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35027.dir/UNSIGNED___INT64.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_35027.dir/UNSIGNED___INT64.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:19: 错误：expected ‘)’ before ‘__int64’
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:20: 错误：expected ‘)’ before ‘__int64’
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:21: 错误：expected ‘)’ before ‘__int64’
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:22: 错误：expected ‘)’ before ‘__int64’
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:23: 错误：expected ‘)’ before ‘__int64’
+gmake[1]: *** [CMakeFiles/cmTC_35027.dir/UNSIGNED___INT64.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_35027/fast] 错误 2
+
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function BZ2_bzCompressInit exists in the cmbzip2 failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c365a/fast"
+gmake -f CMakeFiles/cmTC_c365a.dir/build.make CMakeFiles/cmTC_c365a.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c365a.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit   -o CMakeFiles/cmTC_c365a.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c365a
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_c365a.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit    CMakeFiles/cmTC_c365a.dir/CheckFunctionExists.c.o  -o cmTC_c365a -rdynamic -lcmbzip2 
+/usr/bin/ld: cannot find -lcmbzip2
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_c365a] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c365a/fast] 错误 2
+
+
+Determining if files sys/types.h;ctype.h;copyfile.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c0fcc/fast"
+gmake -f CMakeFiles/cmTC_c0fcc.dir/build.make CMakeFiles/cmTC_c0fcc.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0fcc.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_c0fcc.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:22: 错误：copyfile.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_c0fcc.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_c0fcc/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <copyfile.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;direct.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_542b7/fast"
+gmake -f CMakeFiles/cmTC_542b7.dir/build.make CMakeFiles/cmTC_542b7.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_542b7.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_542b7.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:20: 错误：direct.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_542b7.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_542b7/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <direct.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;ext2fs/ext2_fs.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_af2fc/fast"
+gmake -f CMakeFiles/cmTC_af2fc.dir/build.make CMakeFiles/cmTC_af2fc.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af2fc.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_af2fc.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:6:28: 错误：ext2fs/ext2_fs.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_af2fc.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_af2fc/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <ext2fs/ext2_fs.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_WORKING_EXT2_IOC_GETFLAGS failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_22dc1/fast"
+gmake -f CMakeFiles/cmTC_22dc1.dir/build.make CMakeFiles/cmTC_22dc1.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22dc1.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_WORKING_EXT2_IOC_GETFLAGS   -o CMakeFiles/cmTC_22dc1.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:2:28: 错误：ext2fs/ext2_fs.h：没有那个文件或目录
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:3: 错误：‘EXT2_IOC_GETFLAGS’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:3: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:3: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_22dc1.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_22dc1/fast] 错误 2
+
+Source file was:
+#include <sys/ioctl.h>
+#include <ext2fs/ext2_fs.h>
+int main(void) { return EXT2_IOC_GETFLAGS; }
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h;sys/cdefs.h;sys/ioctl.h;sys/mkdev.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3718c/fast"
+gmake -f CMakeFiles/cmTC_3718c.dir/build.make CMakeFiles/cmTC_3718c.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3718c.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_3718c.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:23: 错误：sys/mkdev.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_3718c.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3718c/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mkdev.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h;sys/cdefs.h;sys/ioctl.h;sys/mount.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b4f22/fast"
+gmake -f CMakeFiles/cmTC_b4f22.dir/build.make CMakeFiles/cmTC_b4f22.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4f22.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_b4f22.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+In file included from /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:
+/usr/include/sys/mount.h:36: 错误：expected identifier before numeric constant
+gmake[1]: *** [CMakeFiles/cmTC_b4f22.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_b4f22/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mount.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;windows.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f0699/fast"
+gmake -f CMakeFiles/cmTC_f0699.dir/build.make CMakeFiles/cmTC_f0699.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0699.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_f0699.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:46:21: 错误：windows.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_f0699.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_f0699/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;wincrypt.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cc40e/fast"
+gmake -f CMakeFiles/cmTC_cc40e.dir/build.make CMakeFiles/cmTC_cc40e.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc40e.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_cc40e.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:46:22: 错误：wincrypt.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_cc40e.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_cc40e/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <wincrypt.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;winioctl.h exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ef4f9/fast"
+gmake -f CMakeFiles/cmTC_ef4f9.dir/build.make CMakeFiles/cmTC_ef4f9.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef4f9.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_ef4f9.dir/CheckIncludeFiles.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:46:22: 错误：winioctl.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_ef4f9.dir/CheckIncludeFiles.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_ef4f9/fast] 错误 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <winioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if the function MD5Init exists in the md failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_357a2/fast"
+gmake -f CMakeFiles/cmTC_357a2.dir/build.make CMakeFiles/cmTC_357a2.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_357a2.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=MD5Init   -o CMakeFiles/cmTC_357a2.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_357a2
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_357a2.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=MD5Init    CMakeFiles/cmTC_357a2.dir/CheckFunctionExists.c.o  -o cmTC_357a2 -rdynamic -lmd 
+/usr/bin/ld: cannot find -lmd
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_357a2] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_357a2/fast] 错误 2
+
+
+Determining if the _CrtSetReportMode exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_538cf/fast"
+gmake -f CMakeFiles/cmTC_538cf.dir/build.make CMakeFiles/cmTC_538cf.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_538cf.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w  -fno-builtin   -o CMakeFiles/cmTC_538cf.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:20: 错误：crtdbg.h：没有那个文件或目录
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：‘_CrtSetReportMode’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_538cf.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_538cf/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <crtdbg.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _CrtSetReportMode
+  return ((int*)(&_CrtSetReportMode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function getvfsbyname exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cebe5/fast"
+gmake -f CMakeFiles/cmTC_cebe5.dir/build.make CMakeFiles/cmTC_cebe5.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cebe5.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=getvfsbyname  -fno-builtin   -o CMakeFiles/cmTC_cebe5.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cebe5
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_cebe5.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=getvfsbyname  -fno-builtin    CMakeFiles/cmTC_cebe5.dir/CheckFunctionExists.c.o  -o cmTC_cebe5 -rdynamic 
+CMakeFiles/cmTC_cebe5.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `getvfsbyname'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_cebe5] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_cebe5/fast] 错误 2
+
+
+Determining if the function lchflags exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9d684/fast"
+gmake -f CMakeFiles/cmTC_9d684.dir/build.make CMakeFiles/cmTC_9d684.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d684.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=lchflags  -fno-builtin   -o CMakeFiles/cmTC_9d684.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9d684
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_9d684.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=lchflags  -fno-builtin    CMakeFiles/cmTC_9d684.dir/CheckFunctionExists.c.o  -o cmTC_9d684 -rdynamic 
+CMakeFiles/cmTC_9d684.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `lchflags'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_9d684] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_9d684/fast] 错误 2
+
+
+Determining if the function strncpy_s exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7b497/fast"
+gmake -f CMakeFiles/cmTC_7b497.dir/build.make CMakeFiles/cmTC_7b497.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b497.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=strncpy_s  -fno-builtin   -o CMakeFiles/cmTC_7b497.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7b497
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_7b497.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=strncpy_s  -fno-builtin    CMakeFiles/cmTC_7b497.dir/CheckFunctionExists.c.o  -o cmTC_7b497 -rdynamic 
+CMakeFiles/cmTC_7b497.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `strncpy_s'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_7b497] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_7b497/fast] 错误 2
+
+
+Determining if the function _ctime64_s exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d4bce/fast"
+gmake -f CMakeFiles/cmTC_d4bce.dir/build.make CMakeFiles/cmTC_d4bce.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4bce.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_ctime64_s  -fno-builtin   -o CMakeFiles/cmTC_d4bce.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d4bce
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_d4bce.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_ctime64_s  -fno-builtin    CMakeFiles/cmTC_d4bce.dir/CheckFunctionExists.c.o  -o cmTC_d4bce -rdynamic 
+CMakeFiles/cmTC_d4bce.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_ctime64_s'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_d4bce] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_d4bce/fast] 错误 2
+
+
+Determining if the function _fseeki64 exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b44b4/fast"
+gmake -f CMakeFiles/cmTC_b44b4.dir/build.make CMakeFiles/cmTC_b44b4.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b44b4.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_fseeki64  -fno-builtin   -o CMakeFiles/cmTC_b44b4.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b44b4
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_b44b4.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_fseeki64  -fno-builtin    CMakeFiles/cmTC_b44b4.dir/CheckFunctionExists.c.o  -o cmTC_b44b4 -rdynamic 
+CMakeFiles/cmTC_b44b4.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_fseeki64'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_b44b4] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_b44b4/fast] 错误 2
+
+
+Determining if the function _get_timezone exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_dd728/fast"
+gmake -f CMakeFiles/cmTC_dd728.dir/build.make CMakeFiles/cmTC_dd728.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd728.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin   -o CMakeFiles/cmTC_dd728.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dd728
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_dd728.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin    CMakeFiles/cmTC_dd728.dir/CheckFunctionExists.c.o  -o cmTC_dd728 -rdynamic 
+CMakeFiles/cmTC_dd728.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_get_timezone'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_dd728] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_dd728/fast] 错误 2
+
+
+Determining if the function _localtime64_s exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_3688c/fast"
+gmake -f CMakeFiles/cmTC_3688c.dir/build.make CMakeFiles/cmTC_3688c.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3688c.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_localtime64_s  -fno-builtin   -o CMakeFiles/cmTC_3688c.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3688c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_3688c.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_localtime64_s  -fno-builtin    CMakeFiles/cmTC_3688c.dir/CheckFunctionExists.c.o  -o cmTC_3688c -rdynamic 
+CMakeFiles/cmTC_3688c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_localtime64_s'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_3688c] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_3688c/fast] 错误 2
+
+
+Determining if the function _mkgmtime64 exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d002d/fast"
+gmake -f CMakeFiles/cmTC_d002d.dir/build.make CMakeFiles/cmTC_d002d.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d002d.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_mkgmtime64  -fno-builtin   -o CMakeFiles/cmTC_d002d.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d002d
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_d002d.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=_mkgmtime64  -fno-builtin    CMakeFiles/cmTC_d002d.dir/CheckFunctionExists.c.o  -o cmTC_d002d -rdynamic 
+CMakeFiles/cmTC_d002d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_mkgmtime64'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_d002d] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_d002d/fast] 错误 2
+
+
+Determining if the function cygwin_conv_path exists failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fa8ae/fast"
+gmake -f CMakeFiles/cmTC_fa8ae.dir/build.make CMakeFiles/cmTC_fa8ae.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa8ae.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=cygwin_conv_path  -fno-builtin   -o CMakeFiles/cmTC_fa8ae.dir/CheckFunctionExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa8ae
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_fa8ae.dir/link.txt --verbose=1
+/usr/bin/gcc   -w -DCHECK_FUNCTION_EXISTS=cygwin_conv_path  -fno-builtin    CMakeFiles/cmTC_fa8ae.dir/CheckFunctionExists.c.o  -o cmTC_fa8ae -rdynamic 
+CMakeFiles/cmTC_fa8ae.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `cygwin_conv_path'
+collect2: ld 返回 1
+gmake[1]: *** [cmTC_fa8ae] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_fa8ae/fast] 错误 2
+
+
+Performing C SOURCE FILE Test MAJOR_IN_MKDEV failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_73818/fast"
+gmake -f CMakeFiles/cmTC_73818.dir/build.make CMakeFiles/cmTC_73818.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73818.dir/src.c.o
+/usr/bin/gcc   -w -DMAJOR_IN_MKDEV   -o CMakeFiles/cmTC_73818.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:1:23: 错误：sys/mkdev.h：没有那个文件或目录
+gmake[1]: *** [CMakeFiles/cmTC_73818.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_73818/fast] 错误 2
+
+Source file was:
+#include <sys/mkdev.h>
+int main() { return major(256); }
+Determining if the EFTYPE exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_81ec6/fast"
+gmake -f CMakeFiles/cmTC_81ec6.dir/build.make CMakeFiles/cmTC_81ec6.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81ec6.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_81ec6.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：‘EFTYPE’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_81ec6.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_81ec6/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef EFTYPE
+  return ((int*)(&EFTYPE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the D_MD_ORDER exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_87685/fast"
+gmake -f CMakeFiles/cmTC_87685.dir/build.make CMakeFiles/cmTC_87685.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87685.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w    -o CMakeFiles/cmTC_87685.dir/CheckSymbolExists.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：‘D_MD_ORDER’未声明(在此函数内第一次使用)
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：(即使在一个函数内多次出现，每个未声明的标识符在其
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: 错误：所在的函数内也只报告一次。)
+gmake[1]: *** [CMakeFiles/cmTC_87685.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_87685/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <langinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef D_MD_ORDER
+  return ((int*)(&D_MD_ORDER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_TM___TM_GMTOFF failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_67747/fast"
+gmake -f CMakeFiles/cmTC_67747.dir/build.make CMakeFiles/cmTC_67747.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67747.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_TM___TM_GMTOFF   -o CMakeFiles/cmTC_67747.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:7: 错误：‘struct tm’没有名为‘__tm_gmtoff’的成员
+gmake[1]: *** [CMakeFiles/cmTC_67747.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_67747/fast] 错误 2
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+   static struct tm tmp;
+   if (sizeof(tmp.__tm_gmtoff))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATFS_F_NAMEMAX failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d9539/fast"
+gmake -f CMakeFiles/cmTC_d9539.dir/build.make CMakeFiles/cmTC_d9539.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9539.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STATFS_F_NAMEMAX   -o CMakeFiles/cmTC_d9539.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:7: 错误：‘tmp’的存储大小未知
+gmake[1]: *** [CMakeFiles/cmTC_d9539.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_d9539/fast] 错误 2
+
+Source file was:
+
+#include <sys/param.h>
+#include <sys/mount.h>
+
+int main()
+{
+   static struct statfs tmp;
+   if (sizeof(tmp.f_namemax))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIME failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_31c44/fast"
+gmake -f CMakeFiles/cmTC_31c44.dir/build.make CMakeFiles/cmTC_31c44.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31c44.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_BIRTHTIME   -o CMakeFiles/cmTC_31c44.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_birthtime’的成员
+gmake[1]: *** [CMakeFiles/cmTC_31c44.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_31c44/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_birthtime))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_09425/fast"
+gmake -f CMakeFiles/cmTC_09425.dir/build.make CMakeFiles/cmTC_09425.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09425.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC   -o CMakeFiles/cmTC_09425.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_birthtimespec’的成员
+gmake[1]: *** [CMakeFiles/cmTC_09425.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_09425/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_birthtimespec.tv_nsec))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_26aad/fast"
+gmake -f CMakeFiles/cmTC_26aad.dir/build.make CMakeFiles/cmTC_26aad.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26aad.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC   -o CMakeFiles/cmTC_26aad.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_mtimespec’的成员
+gmake[1]: *** [CMakeFiles/cmTC_26aad.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_26aad/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_mtimespec.tv_nsec))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_N failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_20451/fast"
+gmake -f CMakeFiles/cmTC_20451.dir/build.make CMakeFiles/cmTC_20451.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20451.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_MTIME_N   -o CMakeFiles/cmTC_20451.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_mtime_n’的成员
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTC_20451.dir/src.c.o] 错误 1
+gmake: *** [cmTC_20451/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_mtime_n))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_UMTIME failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_077ca/fast"
+gmake -f CMakeFiles/cmTC_077ca.dir/build.make CMakeFiles/cmTC_077ca.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_077ca.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_UMTIME   -o CMakeFiles/cmTC_077ca.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_umtime’的成员
+gmake[1]: *** [CMakeFiles/cmTC_077ca.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_077ca/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_umtime))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_USEC failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_63afd/fast"
+gmake -f CMakeFiles/cmTC_63afd.dir/build.make CMakeFiles/cmTC_63afd.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63afd.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_MTIME_USEC   -o CMakeFiles/cmTC_63afd.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_mtime_usec’的成员
+gmake[1]: *** [CMakeFiles/cmTC_63afd.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_63afd/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_mtime_usec))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_FLAGS failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a16f0/fast"
+gmake -f CMakeFiles/cmTC_a16f0.dir/build.make CMakeFiles/cmTC_a16f0.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a16f0.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STAT_ST_FLAGS   -o CMakeFiles/cmTC_a16f0.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct stat’没有名为‘st_flags’的成员
+gmake[1]: *** [CMakeFiles/cmTC_a16f0.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_a16f0/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_flags))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATVFS_F_IOSIZE failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_61f32/fast"
+gmake -f CMakeFiles/cmTC_61f32.dir/build.make CMakeFiles/cmTC_61f32.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61f32.dir/src.c.o
+/usr/bin/gcc   -w -DHAVE_STRUCT_STATVFS_F_IOSIZE   -o CMakeFiles/cmTC_61f32.dir/src.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c: 在函数‘main’中:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/src.c:8: 错误：‘struct statvfs’没有名为‘f_iosize’的成员
+gmake[1]: *** [CMakeFiles/cmTC_61f32.dir/src.c.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_61f32/fast] 错误 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/statvfs.h>
+
+int main()
+{
+   static struct statvfs tmp;
+   if (sizeof(tmp.f_iosize))
+      return 0;
+  return 0;
+}
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_50b07/fast"
+gmake -f CMakeFiles/cmTC_50b07.dir/build.make CMakeFiles/cmTC_50b07.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50b07.dir/TestEndianess.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTC_50b07.dir/TestEndianess.c.o   -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_50b07
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_50b07.dir/link.txt --verbose=1
+/usr/bin/gcc       CMakeFiles/cmTC_50b07.dir/TestEndianess.c.o  -o cmTC_50b07 -rdynamic 
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_275a5/fast"
+gmake -f CMakeFiles/cmTC_275a5.dir/build.make CMakeFiles/cmTC_275a5.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_275a5.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTC_275a5.dir/CheckSymbolExists.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: 错误：‘Q_WS_WIN’在此作用域中尚未声明
+gmake[1]: *** [CMakeFiles/cmTC_275a5.dir/CheckSymbolExists.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_275a5/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_767d1/fast"
+gmake -f CMakeFiles/cmTC_767d1.dir/build.make CMakeFiles/cmTC_767d1.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_767d1.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTC_767d1.dir/CheckSymbolExists.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: 错误：‘Q_WS_QWS’在此作用域中尚未声明
+gmake[1]: *** [CMakeFiles/cmTC_767d1.dir/CheckSymbolExists.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_767d1/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_853bd/fast"
+gmake -f CMakeFiles/cmTC_853bd.dir/build.make CMakeFiles/cmTC_853bd.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_853bd.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++     -o CMakeFiles/cmTC_853bd.dir/CheckSymbolExists.cxx.o -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8: 错误：‘Q_WS_MAC’在此作用域中尚未声明
+gmake[1]: *** [CMakeFiles/cmTC_853bd.dir/CheckSymbolExists.cxx.o] 错误 1
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp'
+gmake: *** [cmTC_853bd/fast] 错误 2
+
+File /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

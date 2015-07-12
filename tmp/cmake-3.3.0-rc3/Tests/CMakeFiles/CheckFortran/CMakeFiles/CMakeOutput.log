@@ -1,0 +1,128 @@
+The system is: Linux - 2.6.32-131.0.15.el6.i686 - i686
+Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
+Compiler: /usr/bin/f95 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+
+The Fortran compiler identification is GNU, found in "/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/3.3.0-rc3/CompilerIdFortran/a.out"
+
+Determining if the Fortran compiler works passed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_395ac/fast"
+gmake -f CMakeFiles/cmTC_395ac.dir/build.make CMakeFiles/cmTC_395ac.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_395ac.dir/testFortranCompiler.f.o
+/usr/bin/f95    -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_395ac.dir/testFortranCompiler.f.o
+Linking Fortran executable cmTC_395ac
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_395ac.dir/link.txt --verbose=1
+/usr/bin/f95       CMakeFiles/cmTC_395ac.dir/testFortranCompiler.f.o  -o cmTC_395ac -rdynamic 
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp'
+
+
+Detecting Fortran compiler ABI info compiled with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_4f0bf/fast"
+gmake -f CMakeFiles/cmTC_4f0bf.dir/build.make CMakeFiles/cmTC_4f0bf.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o
+/usr/bin/f95    -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o
+Linking Fortran executable cmTC_4f0bf
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_4f0bf.dir/link.txt --verbose=1
+/usr/bin/f95    -v   CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o  -o cmTC_4f0bf -rdynamic  
+驱动： /usr/bin/f95 -v CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o -o cmTC_4f0bf -rdynamic -lgfortranbegin -lgfortran -lm -shared-libgcc
+使用内建 specs。
+目标：i686-redhat-linux
+配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux
+线程模型：posix
+gcc 版本 4.4.5 20110214 (Red Hat 4.4.5-6) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/i686-redhat-linux/4.4.5/:/usr/libexec/gcc/i686-redhat-linux/4.4.5/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/:/usr/libexec/gcc/i686-redhat-linux/4.4.5/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f0bf' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/libexec/gcc/i686-redhat-linux/4.4.5/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_4f0bf /usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.5/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.5 -L/usr/lib/gcc/i686-redhat-linux/4.4.5 -L/usr/lib/gcc/i686-redhat-linux/4.4.5/../../.. CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o -lgfortranbegin -lgfortran -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-redhat-linux/4.4.5/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crtn.o
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp'
+
+
+Parsed Fortran implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_4f0bf/fast"]
+  ignore line: [gmake -f CMakeFiles/cmTC_4f0bf.dir/build.make CMakeFiles/cmTC_4f0bf.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp']
+  ignore line: [Building Fortran object CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [/usr/bin/f95    -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o]
+  ignore line: [Linking Fortran executable cmTC_4f0bf]
+  ignore line: [/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_4f0bf.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/f95    -v   CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o  -o cmTC_4f0bf -rdynamic  ]
+  ignore line: [驱动： /usr/bin/f95 -v CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o -o cmTC_4f0bf -rdynamic -lgfortranbegin -lgfortran -lm -shared-libgcc]
+  ignore line: [使用内建 specs。]
+  ignore line: [目标：i686-redhat-linux]
+  ignore line: [配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-ppl --with-cloog --with-tune=generic --with-arch=i686 --build=i686-redhat-linux]
+  ignore line: [线程模型：posix]
+  ignore line: [gcc 版本 4.4.5 20110214 (Red Hat 4.4.5-6) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/i686-redhat-linux/4.4.5/:/usr/libexec/gcc/i686-redhat-linux/4.4.5/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/:/usr/libexec/gcc/i686-redhat-linux/4.4.5/:/usr/libexec/gcc/i686-redhat-linux/:/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/4.4.5/:/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4f0bf' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ /usr/libexec/gcc/i686-redhat-linux/4.4.5/collect2 --eh-frame-hdr --build-id -m elf_i386 --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -o cmTC_4f0bf /usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crt1.o /usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crti.o /usr/lib/gcc/i686-redhat-linux/4.4.5/crtbegin.o -L/usr/lib/gcc/i686-redhat-linux/4.4.5 -L/usr/lib/gcc/i686-redhat-linux/4.4.5 -L/usr/lib/gcc/i686-redhat-linux/4.4.5/../../.. CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o -lgfortranbegin -lgfortran -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-redhat-linux/4.4.5/crtend.o /usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crtn.o]
+    arg [/usr/libexec/gcc/i686-redhat-linux/4.4.5/collect2] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4f0bf] ==> ignore
+    arg [/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-redhat-linux/4.4.5/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.5] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.5]
+    arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.5] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.5]
+    arg [-L/usr/lib/gcc/i686-redhat-linux/4.4.5/../../..] ==> dir [/usr/lib/gcc/i686-redhat-linux/4.4.5/../../..]
+    arg [CMakeFiles/cmTC_4f0bf.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [-lgfortranbegin] ==> lib [gfortranbegin]
+    arg [-lgfortran] ==> lib [gfortran]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/i686-redhat-linux/4.4.5/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-redhat-linux/4.4.5/../../../crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/i686-redhat-linux/4.4.5] ==> [/usr/lib/gcc/i686-redhat-linux/4.4.5]
+  collapse library dir [/usr/lib/gcc/i686-redhat-linux/4.4.5] ==> [/usr/lib/gcc/i686-redhat-linux/4.4.5]
+  collapse library dir [/usr/lib/gcc/i686-redhat-linux/4.4.5/../../..] ==> [/usr/lib]
+  implicit libs: [gfortranbegin;gfortran;m;c]
+  implicit dirs: [/usr/lib/gcc/i686-redhat-linux/4.4.5;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the Fortran compiler supports Fortran 90 passed with the following output:
+Change Dir: /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_371dd/fast"
+gmake -f CMakeFiles/cmTC_371dd.dir/build.make CMakeFiles/cmTC_371dd.dir/build
+gmake[1]: Entering directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp'
+Building Fortran object CMakeFiles/cmTC_371dd.dir/testFortranCompilerF90.f90.o
+/usr/bin/f95    -c /home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_371dd.dir/testFortranCompilerF90.f90.o
+Linking Fortran executable cmTC_371dd
+/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_371dd.dir/link.txt --verbose=1
+/usr/bin/f95       CMakeFiles/cmTC_371dd.dir/testFortranCompilerF90.f90.o  -o cmTC_371dd -rdynamic 
+gmake[1]: Leaving directory `/home/ssicss/workhome/tmp/cmake-3.3.0-rc3/Tests/CMakeFiles/CheckFortran/CMakeFiles/CMakeTmp'
+
+

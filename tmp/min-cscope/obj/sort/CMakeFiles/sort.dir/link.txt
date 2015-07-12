@@ -1,0 +1,2 @@
+/usr/bin/ar cq libsort.a  CMakeFiles/sort.dir/file.c.o CMakeFiles/sort.dir/page.c.o CMakeFiles/sort.dir/cache.c.o CMakeFiles/sort.dir/extsort.c.o CMakeFiles/sort.dir/os_posix.c.o
+/usr/bin/ranlib libsort.a
