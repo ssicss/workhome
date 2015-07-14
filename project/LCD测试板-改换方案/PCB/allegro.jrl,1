@@ -1,0 +1,791 @@
+\t (00:00:03) allegro 16.5 P003 (v16-5-13C) i86
+\t (00:00:03)     Journal start - Mon Jun 22 15:24:48 2015
+\t (00:00:03)         Host=WINDOWS-RB6TD7C User=Administrator Pid=3556 CPUs=4
+\t (00:00:03) 
+\t (00:00:04) Opening existing design...
+\d (00:00:04) Database opened: D:/OneDrive/工作文件/项目开发/虚拟现实头盔/硬件设计/LCD测试板-改换方案/PCB/lcdpower.brd
+\i (00:00:04) trapsize 2386
+\i (00:00:04) trapsize 2343
+\i (00:00:04) trapsize 2393
+\i (00:00:04) trapsize 2445
+\i (00:00:04) trapsize 2445
+\i (00:00:05) placementedit 
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 1991.219 740.206
+\i (00:00:06) trapsize 4889
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 1989.264 740.206
+\i (00:00:06) trapsize 9779
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 1965.796 728.473
+\i (00:00:06) trapsize 19557
+\i (00:00:06) zoom out 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom out 1899.301 677.623
+\i (00:00:06) trapsize 39115
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 913.197 724.561
+\i (00:00:06) trapsize 19557
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 913.198 724.561
+\i (00:00:06) trapsize 9779
+\i (00:00:06) zoom in 1 
+\i (00:00:06) setwindow pcb
+\i (00:00:06) zoom in 913.198 724.562
+\i (00:00:06) trapsize 4889
+\i (00:00:07) zoom out 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom out 1170.377 766.610
+\i (00:00:07) trapsize 9779
+\i (00:00:08) setwindow form.vf_vis
+\i (00:00:08) FORM vf_vis all_all_visible YES 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) color192 
+\i (00:00:14) setwindow cvf.dialog
+\i (00:00:14) cvf layer_mode
+\i (00:00:14) setwindow pcb
+\i (00:00:14) placementedit 
+\i (00:00:17) setwindow cvf.dialog
+\i (00:00:17) cvf layer_tree_item 'Embedded Geomerty'
+\i (00:00:18) cvf layer_tree_item 'Package Geometry'
+\i (00:00:19) cvf layers_visible package_geometry/all_row TRUE
+\i (00:00:20) cvf apply
+\i (00:00:21) cvf okay
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom out 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom out 1446.134 598.418
+\i (00:00:23) trapsize 19557
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in 1176.244 692.293
+\i (00:00:24) trapsize 9779
+\i (00:05:18) zoom in 1 
+\i (00:05:18) setwindow pcb
+\i (00:05:18) zoom in 1821.634 643.400
+\i (00:05:18) trapsize 4889
+\i (00:05:18) zoom in 1 
+\i (00:05:18) setwindow pcb
+\i (00:05:18) zoom in 1821.634 643.400
+\i (00:05:18) trapsize 2445
+\i (00:05:18) zoom in 1 
+\i (00:05:18) setwindow pcb
+\i (00:05:18) zoom in 1821.634 642.911
+\i (00:05:18) trapsize 1222
+\i (00:05:18) zoom in 1 
+\i (00:05:18) setwindow pcb
+\i (00:05:18) zoom in 1821.635 642.912
+\i (00:05:18) trapsize 611
+\i (00:05:19) zoom out 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom out 1804.401 641.201
+\i (00:05:19) trapsize 1222
+\i (00:05:19) zoom out 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom out 1804.400 641.201
+\i (00:05:19) trapsize 2445
+\i (00:05:19) zoom out 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom out 1804.400 641.201
+\i (00:05:19) trapsize 4889
+\i (00:05:19) zoom out 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom out 1804.400 641.201
+\i (00:05:19) trapsize 9779
+\i (00:05:19) zoom out 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom out 1804.401 641.202
+\i (00:05:19) trapsize 19557
+\i (00:05:19) zoom out 1 
+\i (00:05:19) setwindow pcb
+\i (00:05:19) zoom out 1804.401 641.201
+\i (00:05:19) trapsize 39115
+\i (00:05:20) zoom in 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom in 905.375 860.243
+\i (00:05:20) trapsize 19557
+\i (00:05:20) zoom in 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom in 905.375 860.243
+\i (00:05:20) trapsize 9779
+\i (00:05:20) zoom in 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom in 905.376 860.243
+\i (00:05:20) trapsize 4889
+\i (00:05:20) zoom in 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom in 905.376 860.243
+\i (00:05:20) trapsize 2445
+\i (00:05:20) zoom in 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom in 905.376 860.243
+\i (00:05:20) trapsize 1222
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out 950.358 870.022
+\i (00:05:20) trapsize 2445
+\i (00:05:20) zoom out 1 
+\i (00:05:20) setwindow pcb
+\i (00:05:20) zoom out 950.358 870.021
+\i (00:05:20) trapsize 4889
+\i (00:05:21) zoom out 1 
+\i (00:05:21) setwindow pcb
+\i (00:05:21) zoom out 950.359 870.022
+\i (00:05:21) trapsize 9779
+\i (00:05:21) zoom out 1 
+\i (00:05:21) setwindow pcb
+\i (00:05:21) zoom out 950.359 870.022
+\i (00:05:21) trapsize 19557
+\i (00:05:22) zoom in 1 
+\i (00:05:22) setwindow pcb
+\i (00:05:22) zoom in 1364.973 744.856
+\i (00:05:22) trapsize 9779
+\i (00:05:24) color192 
+\i (00:05:24) setwindow cvf.dialog
+\i (00:05:24) cvf layer_mode
+\i (00:05:24) setwindow pcb
+\i (00:05:24) placementedit 
+\i (00:05:25) setwindow cvf.dialog
+\i (00:05:25) cvf layer_tree_item 'Board Geometry'
+\i (00:05:28) cvf layer_tree_item 'Embedded Geomerty'
+\i (00:05:28) cvf layer_tree_item 'Components'
+\i (00:05:30) cvf layer_tree_item 'Manufacturing'
+\i (00:05:31) cvf layers_visible manufacturing/all_row TRUE
+\i (00:05:32) cvf apply
+\i (00:05:32) cvf okay
+\i (00:08:16) setwindow pcb
+\i (00:08:16) pick grid 2327.191 -33.524
+\t (00:08:16) last pick:  2327.200  -33.500
+\i (00:08:17) zoom in 1 
+\i (00:08:17) setwindow pcb
+\i (00:08:17) zoom in 2327.191 -33.524
+\i (00:08:17) trapsize 4889
+\i (00:08:18) zoom out 1 
+\i (00:08:18) setwindow pcb
+\i (00:08:18) zoom out 2327.191 -33.523
+\i (00:08:18) trapsize 9779
+\i (00:52:18) pick grid -148.760 682.272
+\t (00:52:18) last pick:  -148.800  682.300
+\i (01:04:35) zoom in 1 
+\i (01:04:35) setwindow pcb
+\i (01:04:35) zoom in 424.269 400.648
+\i (01:04:35) trapsize 4889
+\i (01:04:35) zoom in 1 
+\i (01:04:35) setwindow pcb
+\i (01:04:35) zoom in 426.224 400.648
+\i (01:04:35) trapsize 2445
+\i (01:04:35) zoom in 1 
+\i (01:04:35) setwindow pcb
+\i (01:04:35) zoom in 426.714 401.138
+\i (01:04:35) trapsize 1222
+\i (01:04:35) zoom in 1 
+\i (01:04:35) setwindow pcb
+\i (01:04:35) zoom in 426.714 401.138
+\i (01:04:35) trapsize 611
+\i (01:04:36) zoom out 1 
+\i (01:04:36) setwindow pcb
+\i (01:04:36) zoom out 444.194 429.863
+\i (01:04:36) trapsize 1222
+\i (01:04:36) zoom out 1 
+\i (01:04:36) setwindow pcb
+\i (01:04:36) zoom out 442.482 428.153
+\i (01:04:36) trapsize 2445
+\i (01:04:36) zoom out 1 
+\i (01:04:36) setwindow pcb
+\i (01:04:36) zoom out 440.038 427.174
+\i (01:04:36) trapsize 4889
+\i (01:04:36) zoom out 1 
+\i (01:04:36) setwindow pcb
+\i (01:04:36) zoom out 436.126 426.196
+\i (01:04:36) trapsize 9779
+\i (01:04:36) zoom in 1 
+\i (01:04:36) setwindow pcb
+\i (01:04:36) zoom in 1848.162 502.471
+\i (01:04:36) trapsize 4889
+\i (01:04:36) zoom in 1 
+\i (01:04:36) setwindow pcb
+\i (01:04:36) zoom in 1848.162 502.471
+\i (01:04:36) trapsize 2445
+\i (01:04:37) zoom out 1 
+\i (01:04:37) setwindow pcb
+\i (01:04:37) zoom out 1673.613 444.778
+\i (01:04:37) trapsize 4889
+\i (01:04:39) zoom out 1 
+\i (01:04:39) setwindow pcb
+\i (01:04:39) zoom out 1744.997 498.560
+\i (01:04:39) trapsize 9779
+\i (01:04:53) cmgr 
+\i (01:04:54) setwindow cmgr
+\i (01:04:54) cm newView ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (01:04:54) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch MAX_LINE_WIDTH ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch MAX_LINE_WIDTH ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch MAXIMUM_NECK_LENGTH ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch MAXIMUM_NECK_LENGTH ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch VIA_LIST ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch VIA_LIST ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch MIN_BVIA_STAGGER ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch MIN_BVIA_STAGGER ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch MAX_BVIA_STAGGER ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch MAX_BVIA_STAGGER ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch PAD_PAD_DIRECT_CONNECT ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch PAD_PAD_DIRECT_CONNECT ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch ALLOW_ON_ETCH_SUBCLASS ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch ALLOW_ON_ETCH_SUBCLASS ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch TS_ALLOWED ( Design "lcdpower" ) Design
+\i (01:04:54) cm fetch TS_ALLOWED ( Design "lcdpower" ) "Physical CSet"
+\i (01:04:54) cm fetch DRC_IS_UPTODATE ( System "System" ) System
+\i (01:04:54) cm fetch ONLINE_DRC ( System "System" ) System
+\i (01:04:54) setwindow pcb
+\i (01:04:54) placementedit 
+\i (01:04:57) setwindow cmgr
+\i (01:04:57) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (01:04:57) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (01:04:58) cm newView ( worksheet 53:Electrical 66:Net 25:Routing 26:Wiring )
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch NET_SCHEDULE ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch NET_SCHEDULE ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:58) cm fetch NET_SCHEDULE ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch NET_SCHEDULE ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch NET_SCHEDULE ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch NET_SCHEDULE ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_ACTUAL ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch RATSNEST_SCHEDULE_ACTUAL ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch STUB_LENGTH_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:58) cm fetch STUB_LENGTH_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch STUB_LENGTH ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch STUB_LENGTH ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:58) cm fetch STUB_LENGTH ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch STUB_LENGTH ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch STUB_LENGTH ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch STUB_LENGTH_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch STUB_LENGTH_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch STUB_LENGTH ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch STUB_LENGTH_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch STUB_LENGTH_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch STUB_LENGTH_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch STUB_LENGTH_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch STUB_LENGTH_ACTUAL ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch STUB_LENGTH_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch STUB_LENGTH_ACTUAL ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_ACTUAL ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch MAX_EXPOSED_LENGTH_ACTUAL ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch MAX_PARALLEL_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:58) cm fetch MAX_PARALLEL_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch MAX_PARALLEL ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch MAX_PARALLEL ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:58) cm fetch MAX_PARALLEL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch MAX_PARALLEL ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch MAX_PARALLEL ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch MAX_PARALLEL_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch MAX_PARALLEL_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch MAX_PARALLEL ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch MAX_PARALLEL_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch MAX_PARALLEL_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch MAX_PARALLEL_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch MAX_PARALLEL_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch MAX_PARALLEL_ACTUAL ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch MAX_PARALLEL_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch MAX_PARALLEL_ACTUAL ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch LAYERSET_GROUP_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:58) cm fetch LAYERSET_GROUP_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch LAYERSET_GROUP ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch LAYERSET_GROUP ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:58) cm fetch LAYERSET_GROUP ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch LAYERSET_GROUP ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch LAYERSET_GROUP ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch LAYERSET_GROUP_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch LAYERSET_GROUP_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch LAYERSET_GROUP ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch LAYERSET_GROUP_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch LAYERSET_GROUP_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch LAYERSET_GROUP_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch LAYERSET_GROUP_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch LAYERSET_GROUP_ACTUAL ( Design "lcdpower" ) Bus
+\i (01:04:58) cm fetch LAYERSET_GROUP_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch LAYERSET_GROUP_ACTUAL ( Design "lcdpower" ) "Net Class"
+\i (01:04:58) cm fetch ECSET_MAPPING_ERROR_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch ECSET_MAPPING_ERROR ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch ECSET_MAPPING_ERROR_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch ECSET_MAPPING_ERROR ( Design "lcdpower" ) XNet
+\i (01:04:58) cm fetch ECSET_MAPPING_ERROR_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch ECSET_MAPPING_ERROR ( Design "lcdpower" ) Net
+\i (01:04:58) cm fetch LAYERSET_IGNORED_LENGTH ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:58) cm fetch LAYERSET_IGNORED_LENGTH ( Design "lcdpower" ) Net
+\i (01:04:59) cm setColumnFilter ( column 53:Electrical 66:Net 25:Routing "34:Differential Pair" 0:Type ) *
+\i (01:04:59) cm fetch PHYSICAL_CONSTRAINT_SET ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch PHYSICAL_CONSTRAINT_SET ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch PHYSICAL_CONSTRAINT_SET ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch PHYSICAL_CONSTRAINT_SET ( Design "lcdpower" ) Bus
+\i (01:04:59) cm fetch PHYSICAL_CONSTRAINT_SET ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch GATHER_LENGTH_IGNORED ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_PRIMARY_GAP ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_COUPLED_PLUS ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_COUPLED_MINUS ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_ACTUAL ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_ACTUAL ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm expand ( row ( Design "lcdpower" ) )
+\i (01:04:59) cm expand ( row ( Design "lcdpower" ) )
+\i (01:04:59) cm expand ( row ( Design "lcdpower" ) )
+\i (01:04:59) cm select tab "34:Differential Pair"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_ACTUAL ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_GATHER_CONTROL ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_ACTUAL ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:59) cm fetch DIFFP_UNCOUPLED_LENGTH_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) Design
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_ACTUAL ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_ACTUAL ( Design "lcdpower" ) "Pin Pair"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) "PinPair Result"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_ACTUAL ( Design "lcdpower" ) Result
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) Bus
+\i (01:04:59) cm fetch DIFFP_PHASE_TOL_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) "Diff Pair"
+\i (01:04:59) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) "Electrical CSet"
+\i (01:04:59) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) "Net Class"
+\i (01:04:59) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch DIFFP_MIN_SPACE ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch MIN_LINE_WIDTH ( Design "lcdpower" ) Bus
+\i (01:04:59) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) Net
+\i (01:04:59) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) XNet
+\i (01:04:59) cm fetch MIN_NECK_WIDTH ( Design "lcdpower" ) Bus
+\i (01:04:59) cm fetch DIFFP_NECK_GAP ( Design "lcdpower" ) XNet
+\i (01:05:01) cm setColumnFilter ( column 53:Electrical 66:Net 25:Routing "29:Total Etch Length" 0:Type ) *
+\i (01:05:01) cm expand ( row ( Design "lcdpower" ) )
+\i (01:05:01) cm expand ( row ( Design "lcdpower" ) )
+\i (01:05:01) cm expand ( row ( Design "lcdpower" ) )
+\i (01:05:01) cm select tab "29:Total Etch Length"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_MARGIN ( Design "lcdpower" ) Design
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_MARGIN ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN ( Design "lcdpower" ) "Electrical CSet"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN ( Design "lcdpower" ) "Net Class"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN ( Design "lcdpower" ) Bus
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_MARGIN ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_ACTUAL ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_MARGIN ( Design "lcdpower" ) Bus
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MIN_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_MARGIN ( Design "lcdpower" ) Design
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_MARGIN ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX ( Design "lcdpower" ) "Electrical CSet"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX ( Design "lcdpower" ) "Net Class"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX ( Design "lcdpower" ) Bus
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_MARGIN ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_ACTUAL ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_MARGIN ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_MARGIN ( Design "lcdpower" ) Bus
+\i (01:05:01) cm fetch TOTAL_ETCH_LENGTH_MAX_MARGIN ( Design "lcdpower" ) "Net Class"
+\i (01:05:01) cm fetch UNROUTED_LENGTH_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:01) cm fetch PERCENT_MANHATTAN_ACTUAL ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:01) cm fetch UNROUTED_LENGTH_ACTUAL ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch PERCENT_MANHATTAN_ACTUAL ( Design "lcdpower" ) Net
+\i (01:05:01) cm setColumnFilter ( column 53:Electrical 66:Net 25:Routing "30:Relative Propagation Delay" 0:Type ) *
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) "Electrical CSet"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) "Match Group"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_PATH_TYPE ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_PATH_TYPE ( Design "lcdpower" ) "Electrical CSet"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_PATH_TYPE ( Design "lcdpower" ) "Match Group"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) "Electrical CSet"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) "Match Group"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_PATH_TYPE ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_ACTUAL ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_ACTUAL ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_PLUS_MINUS ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_PLUS_MINUS ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_OBJECT_LENGTH ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_OBJECT_LENGTH ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:01) cm expand ( row ( Design "lcdpower" ) )
+\i (01:05:01) cm expand ( row ( Design "lcdpower" ) )
+\i (01:05:01) cm scope Design "lcdpower"
+\i (01:05:01) cm expand ( row ( "Match Group" "MG_DATA1_B" ) )
+\i (01:05:01) cm expand ( row ( "Match Group" "MG_DATA0_B" ) )
+\i (01:05:01) cm expand ( row ( "Match Group" "MG_ALL" ) )
+\i (01:05:01) cm expand ( row ( "Diff Pair" "DATA1_B" ) )
+\i (01:05:01) cm expand ( row ( "Diff Pair" "DATA0_B" ) )
+\i (01:05:01) cm expand ( row ( Design "lcdpower" ) )
+\i (01:05:01) cm expand ( row ( "Match Group" "MG_ALL" ) )
+\i (01:05:01) cm expand ( row ( "Match Group" "MG_DATA0_B" ) )
+\i (01:05:01) cm expand ( row ( "Match Group" "MG_DATA1_B" ) )
+\i (01:05:01) cm expand ( row ( "Diff Pair" "DATA0_B" ) )
+\i (01:05:01) cm expand ( row ( "Diff Pair" "DATA1_B" ) )
+\i (01:05:01) cm select tab "30:Relative Propagation Delay"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) Design
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_ACTUAL ( Design "lcdpower" ) XNet
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_ACTUAL ( Design "lcdpower" ) Net
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) Result
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY ( Design "lcdpower" ) Result
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_SCOPE ( Design "lcdpower" ) Result
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_ACTUAL ( Design "lcdpower" ) Result
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_MARGIN ( Design "lcdpower" ) "Match Group"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_DELAY_ACTUAL ( Design "lcdpower" ) "Match Group"
+\i (01:05:01) cm fetch RELATIVE_PROPAGATION_OBJECT_LENGTH ( Design "lcdpower" ) Net
+\i (01:05:02) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) Net
+\i (01:05:02) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) Design
+\i (01:05:02) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) XNet
+\i (01:05:02) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) "Diff Pair"
+\i (01:05:02) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) "Net Class"
+\i (01:05:02) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) Bus
+\i (01:05:03) cm fetch VIA_Z_ENABLED ( System "System" ) System
+\i (01:05:13) cm analyze ( "Match Group" "MG_ALL" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_CLK_A" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_CLK_B" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA0_A" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA0_B" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA1_A" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA1_B" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA2_A" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA2_B" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA3_A" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA3_B" ) RELATIVE_PROPAGATION_DELAY 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_ALL" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_CLK_A" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_CLK_B" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA0_A" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA0_B" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA1_A" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA1_B" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA2_A" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA2_B" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA3_A" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( "Match Group" "MG_DATA3_B" ) RELATIVE_PROPAGATION_DELAY_PLUS_MINUS 4
+\i (01:05:13) cm analyze ( Net "CLK_NA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "CLK_NB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "CLK_PA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "CLK_PB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA0_NA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA0_NB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA0_PA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA0_PB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA1_NA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA1_NB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA1_PA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA1_PB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA2_NA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA2_NB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA2_PA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA2_PB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA3_NA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA3_NB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA3_PA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "DATA3_PB" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "BOOST_RST" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "BOOST_SCL" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "BOOST_SDA" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "GND" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "INT_EN" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "LDO_EN" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "LED+" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "LED1-" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "LED2-" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16618" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16622" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16626" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16630" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16714" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16718" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16722" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N16962" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17570" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17582" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17594" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17606" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17618" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17630" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17728" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17740" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17752" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N17764" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N20530" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N21334" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N22129" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "N22733" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "VCC_1V8_VCONT" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "VCC_3V3_IN" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "VCC_5V_VN" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm analyze ( Net "VCC_5V_VP" ) RELATIVE_PROPAGATION_OBJECT_LENGTH 0
+\i (01:05:13) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:13) cm fetch RELATIVE_PROPAGATION_DELAY_VSTATUS ( Design "lcdpower" ) "Pin Pair"
+\i (01:05:13) cm fetch RELATIVE_PROPAGATION_OBJECT_DELAY ( Design "lcdpower" ) "PinPair Result"
+\i (01:05:31) setwindow pcb
+\i (01:05:31) pick grid 2447.104 283.430
+\t (01:05:31) last pick:  2447.100  283.400
+\i (01:05:34) zoom in 1 
+\i (01:05:34) setwindow pcb
+\i (01:05:34) zoom in 1723.485 500.515
+\i (01:05:34) trapsize 4889
+\i (01:05:35) zoom in 1 
+\i (01:05:35) setwindow pcb
+\i (01:05:35) zoom in 1723.485 500.516
+\i (01:05:35) trapsize 2445
+\i (01:05:41) zoom out 1 
+\i (01:05:41) setwindow pcb
+\i (01:05:41) zoom out 1582.672 558.210
+\i (01:05:41) trapsize 4889
+\i (01:06:16) zoom out 1 
+\i (01:06:16) setwindow pcb
+\i (01:06:16) zoom out 2162.546 365.570
+\i (01:06:16) trapsize 9779
+\i (01:06:16) zoom out 1 
+\i (01:06:16) setwindow pcb
+\i (01:06:16) zoom out 2162.547 365.571
+\i (01:06:16) trapsize 19557
+\i (01:06:17) zoom in 1 
+\i (01:06:17) setwindow pcb
+\i (01:06:17) zoom in 1513.246 549.409
+\i (01:06:17) trapsize 9779
+\i (01:06:17) zoom in 1 
+\i (01:06:17) setwindow pcb
+\i (01:06:17) zoom in 1513.246 549.409
+\i (01:06:17) trapsize 4889
+\i (01:06:18) zoom out 1 
+\i (01:06:18) setwindow pcb
+\i (01:06:18) zoom out 1202.285 537.675
+\i (01:06:18) trapsize 9779
+\i (01:06:18) zoom in 1 
+\i (01:06:18) setwindow pcb
+\i (01:06:18) zoom in 1736.200 228.669
+\i (01:06:18) trapsize 4889
+\i (01:06:35) zoom in 1 
+\i (01:06:35) setwindow pcb
+\i (01:06:35) zoom in 1626.679 714.667
+\i (01:06:35) trapsize 2445
+\i (01:06:37) zoom out 1 
+\i (01:06:37) setwindow pcb
+\i (01:06:37) zoom out 1612.011 599.280
+\i (01:06:37) trapsize 4889
+\i (01:06:37) zoom out 1 
+\i (01:06:37) setwindow pcb
+\i (01:06:37) zoom out 1612.011 598.302
+\i (01:06:37) trapsize 9779
+\i (01:06:37) zoom in 1 
+\i (01:06:37) setwindow pcb
+\i (01:06:37) zoom in 1676.551 373.393
+\i (01:06:37) trapsize 4889
+\i (01:06:37) zoom in 1 
+\i (01:06:37) setwindow pcb
+\i (01:06:37) zoom in 1676.551 373.393
+\i (01:06:37) trapsize 2445
+\i (01:06:37) zoom in 1 
+\i (01:06:37) setwindow pcb
+\i (01:06:37) zoom in 1676.551 373.394
+\i (01:06:37) trapsize 1222
+\i (01:06:38) zoom out 1 
+\i (01:06:38) setwindow pcb
+\i (01:06:38) zoom out 1677.284 423.754
+\i (01:06:38) trapsize 2445
+\i (01:06:38) zoom out 1 
+\i (01:06:38) setwindow pcb
+\i (01:06:38) zoom out 1676.796 423.754
+\i (01:06:38) trapsize 4889
+\i (01:06:39) zoom in 1 
+\i (01:06:39) setwindow pcb
+\i (01:06:39) zoom in 1682.663 376.816
+\i (01:06:39) trapsize 2445
+\i (01:06:44) zoom out 1 
+\i (01:06:44) setwindow pcb
+\i (01:06:44) zoom out 1672.885 365.570
+\i (01:06:44) trapsize 4889
+\i (01:06:55) zoom out 1 
+\i (01:06:55) setwindow pcb
+\i (01:06:55) zoom out 1861.612 271.696
+\i (01:06:55) trapsize 9779
+\i (01:06:57) zoom in 1 
+\i (01:06:57) setwindow pcb
+\i (01:06:57) zoom in 1711.022 320.590
+\i (01:06:57) trapsize 4889
+\i (01:06:58) zoom out 1 
+\i (01:06:58) setwindow pcb
+\i (01:06:58) zoom out 1813.697 290.276
+\i (01:06:58) trapsize 9779
+\i (01:07:00) zoom in 1 
+\i (01:07:00) setwindow pcb
+\i (01:07:00) zoom in 628.527 487.804
+\i (01:07:00) trapsize 4889
+\i (01:07:00) zoom in 1 
+\i (01:07:00) setwindow pcb
+\i (01:07:00) zoom in 628.527 484.870
+\i (01:07:00) trapsize 2445
+\i (01:07:01) zoom out 1 
+\i (01:07:01) setwindow pcb
+\i (01:07:01) zoom out 730.714 388.551
+\i (01:07:01) trapsize 4889
+\i (01:07:19) zoom out 1 
+\i (01:07:19) setwindow pcb
+\i (01:07:19) zoom out 868.592 390.507
+\i (01:07:19) trapsize 9779
+\i (01:07:21) zoom out 1 
+\i (01:07:21) setwindow pcb
+\i (01:07:21) zoom out 272.096 724.937
+\i (01:07:21) trapsize 19557
+\i (01:07:22) zoom in 1 
+\i (01:07:22) setwindow pcb
+\i (01:07:22) zoom in 1046.564 611.504
+\i (01:07:22) trapsize 9779
+\i (01:07:23) zoom in 1 
+\i (01:07:23) setwindow pcb
+\i (01:07:23) zoom in 1046.564 611.505
+\i (01:07:23) trapsize 4889
+\i (01:07:29) zoom out 1 
+\i (01:07:29) setwindow pcb
+\i (01:07:29) zoom out 753.205 404.198
+\i (01:07:29) trapsize 9779
+\i (01:07:31) zoom in 1 
+\i (01:07:31) setwindow pcb
+\i (01:07:31) zoom in 655.418 940.067
+\i (01:07:31) trapsize 4889
+\i (01:07:31) zoom in 1 
+\i (01:07:31) setwindow pcb
+\i (01:07:31) zoom in 655.418 940.067
+\i (01:07:31) trapsize 2445
+\i (01:07:32) zoom out 1 
+\i (01:07:32) setwindow pcb
+\i (01:07:32) zoom out 713.601 930.777
+\i (01:07:32) trapsize 4889
+\i (01:07:33) zoom out 1 
+\i (01:07:33) setwindow pcb
+\i (01:07:33) zoom out 412.419 788.010
+\i (01:07:33) trapsize 9779
+\i (01:07:34) zoom in 1 
+\i (01:07:34) setwindow pcb
+\i (01:07:34) zoom in 649.063 426.200
+\i (01:07:34) trapsize 4889
+\i (01:07:34) zoom out 1 
+\i (01:07:34) setwindow pcb
+\i (01:07:34) zoom out 756.628 561.145
+\i (01:07:34) trapsize 9779
+\i (01:30:46) setwindow cmgr
+\i (01:30:46) cm exit
+\i (01:30:46) setwindow pcb
+\i (01:30:46) exit 
+\e (01:30:46) Do you want to save the changes you made to lcdpower.brd?
+\i (01:30:49) fillin no 
+\t (01:30:49)     Journal end - Mon Jun 22 16:55:34 2015

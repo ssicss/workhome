@@ -1,0 +1,50 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : lcdpower.brd                                  )
+(    Software Version : 16.5P003                                      )
+(    Date/Time        : Sat Jun 06 19:31:31 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  U2 / BTL601425-W733L_AXE650124_BTL60 / AXE650124 at (61.0082 28.7518)
+         Placed symbol:  J3 / HEADER 20_HD254P-20X1_HEADER 20 / HD254P-20X1 at (61.4782 25.8286)
+         Placed symbol:  J5 / HEADER 8X2_HD254P-8X2_HEADER 8X / HD254P-8X2 at (61.4782 20.5454)
+         Placed symbol:  U1 / TPS65133_WSON40P300X300X80-12_T / WSON40P300X300X80-12 at (60.7082 15.9722)
+         Placed symbol:  J2 / HEADER 6X2_HD254P-6X2_HEADER 6X / HD254P-6X2 at (61.4782 11.6590)
+         Placed symbol:  U3 / LM3509_WSON50P300X300X80-10_LM3 / WSON50P300X300X80-10 at (60.7082 6.7508)
+         Placed symbol:  J4 / HEADER 10_HD254P-10X1_HEADER 10 / HD254P-10X1 at (61.4782 4.9776)
+         Placed symbol:  J7 / HEADER 8_HD254P-8X1_HEADER 8 / HD254P-8X1 at (61.4782 2.2344)
+         Placed symbol:  U4 / RT9013-SC82_SC-82_RT9013-1HPY/1 / SC-82 at (111.5614 37.0418)
+         Placed symbol:  J8 / HEADER 2X2_HD254P-2X2_HEADER 2X / HD254P-2X2 at (112.4814 32.4286)
+         Placed symbol:  J1 / HEADER 4_HD254P-4X1_HEADER 4 / HD254P-4X1 at (112.4814 29.6854)
+         Placed symbol:  D1 / BZX84C39/SOT_DO214AB_SS34 / DO214AB at (112.2114 25.1572)
+         Placed symbol:  D2 / LED_LEDM0603_RED/RESC0603 / LEDM0603 at (112.2782 21.3910)
+         Placed symbol:  C7 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (112.2114 20.2081)
+         Placed symbol:  C6 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (112.2114 19.0760)
+         Placed symbol:  C5 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (112.2114 17.9439)
+         Placed symbol:  C3 / CAP NP_CAPC0805_100NF/CAPC0603 / CAPC0805 at (112.4814 16.5893)
+         Placed symbol:  J6 / HEADER 2_HD254P-2X1_HEADER 2 / HD254P-2X1 at (112.4814 14.4811)
+         Placed symbol:  C4 / CAP NP_CAPC0805_10UF/CAPC0805 / CAPC0805 at (112.4814 12.3729)
+         Placed symbol:  C8 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (112.2114 11.1222)
+         Placed symbol:  L3 / INDUCTOR_IND470X470X280_10UH / IND470X470X280 at (112.2114 8.0526)
+         Placed symbol:  R1 / R2_RESC0603_100K/RESC0603 / RESC0603 at (112.2114 5.0869)
+         Placed symbol:  R6 / R2_RESC0603_100K/RESC0603 / RESC0603 at (112.2114 3.9548)
+         Placed symbol:  R2 / R2_RESC0603_10K/RESC0603 / RESC0603 at (112.2114 2.8227)
+         Placed symbol:  R3 / R2_RESC0603_10K/RESC0603 / RESC0603 at (112.2114 1.6906)
+         Placed symbol:  R4 / R2_RESC0603_8K/RESC0603 / RESC0603 at (112.2114 0.5585)
+         Placed symbol:  R5 / R2_RESC0603_510R/RESC0603 / RESC0603 at (122.5746 39.3893)
+         Placed symbol:  C2 / CAP NP_CAPC0805_10UF/CAPC0805 / CAPC0805 at (122.8446 38.0347)
+         Placed symbol:  C1 / CAP NP_CAPC0805_10UF/CAPC0805 / CAPC0805 at (122.8446 36.5615)
+         Placed symbol:  L2 / INDUCTOR_IND300X300X110_4R7UH / IND300X300X110 at (122.3746 34.2233)
+         Placed symbol:  L1 / INDUCTOR_IND300X300X110_4R7UH / IND300X300X110 at (122.3746 31.0201)
+
+
+Placed 31 of 31 applicable (31 total) symbols.
+
+-----------------------------------------------------------------------
+

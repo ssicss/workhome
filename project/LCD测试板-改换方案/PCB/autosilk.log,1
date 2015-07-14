@@ -1,0 +1,40 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Auto Silkscreen Log File                                         )
+(                                                                     )
+(    Drawing          : lcdpower.brd                                  )
+(    Software Version : 16.5P003                                      )
+(    Date/Time        : Tue Jun 09 10:00:12 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Generating Auto Silkscreen for both sides of the board.
+
+Copying all elements.
+
+Element to Pad clearance is 0.000
+Max Text displacement is 100.000
+Min Line Length is 0.000
+Allowing 0, 90, 180 and 270 degree text rotations.
+Text Allowed Under Components.
+Subclass Selections:
+ Board Geometry       : None
+ Component Value      : None
+ Device Type          : None
+ Package Geometry     : Silkscreen
+ Reference Designator : Silkscreen
+ Tolerance            : None
+ User Part Number     : None
+
+
+     ----- Top Silkscreen -----
+
+
+     ----- Bottom Silkscreen -----
+
+
+Total Failures: 0
+
+Log End
+

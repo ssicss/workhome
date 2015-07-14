@@ -1,0 +1,20 @@
+{ Using PSTWRITER 16.5.0 p001Jun-08-2015 at 20:22:16 }
+
+#1 WARNING(ORCAP-36006): Part Name "BZX84C39/SOT_SOD323_B0530WS/SOD323" is renamed to "BZX84C39/SOT_SOD323_B0530WS/SOD".
+#2 WARNING(ORCAP-36006): Part Name "HEADER 6X2_HD254P-6X2_HEADER 6X2" is renamed to "HEADER 6X2_HD254P-6X2_HEADER 6X".
+#3 WARNING(ORCAP-36006): Part Name "HEADER 8X2_HD254P-8X2_HEADER 8X2" is renamed to "HEADER 8X2_HD254P-8X2_HEADER 8X".
+#4 WARNING(ORCAP-36006): Part Name "HEADER 2X2_HD254P-2X2_HEADER 2X2" is renamed to "HEADER 2X2_HD254P-2X2_HEADER 2X".
+#5 WARNING(ORCAP-36006): Part Name "TPS65133_WSON40P300X300X80-12_TPS65133" is renamed to "TPS65133_WSON40P300X300X80-12_T".
+#6 WARNING(ORCAP-36006): Part Name "BTL601425-W733L_AXE650124_BTL601425-W733L" is renamed to "BTL601425-W733L_AXE650124_BTL60".
+#7 WARNING(ORCAP-36006): Part Name "LM3509_WSON50P300X300X80-10_LM3509" is renamed to "LM3509_WSON50P300X300X80-10_LM3".
+#8 WARNING(ORCAP-36006): Part Name "RT9013-SC82_SC-82_RT9013-1HPY/1HGY" is renamed to "RT9013-SC82_SC-82_RT9013-1HPY/1".
+Scanning netlist files ...
+
+Loading... d:\onedrive\工作文件\项目开发\虚拟现实头盔\硬件设计\lcd测试板-改换方案\原理图\allegro/pstchip.dat
+
+Loading... d:\onedrive\工作文件\项目开发\虚拟现实头盔\硬件设计\lcd测试板-改换方案\原理图\allegro/pstchip.dat
+
+Loading... d:\onedrive\工作文件\项目开发\虚拟现实头盔\硬件设计\lcd测试板-改换方案\原理图\allegro/pstxprt.dat
+
+Loading... d:\onedrive\工作文件\项目开发\虚拟现实头盔\硬件设计\lcd测试板-改换方案\原理图\allegro/pstxnet.dat
+packaging the design view...

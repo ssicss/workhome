@@ -1,0 +1,64 @@
+Tue Jun 09 10:10:49 2015				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Tue Jun 09 10:10:49 2015
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : lcdpower.brd                                  )
+(    Software Version : 16.5P002                                      )
+(    Date/Time        : Tue Jun 09 10:10:49 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Tue Jun 09 10:10:49 2015				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design = 'D:/OneDrive/工作文件/项目开发/虚拟现实头盔/硬件设计/LCD测试板-改换方案/PCB/lcdpower.brd'
+Output design = ''
+Update mechanical symbols = 'NO'
+Update format symbols = 'NO'
+Update package symbols = 'NO'
+Update shape/flash symbols = 'NO'
+Update symbol padstacks = 'YES'
+Reset symbol text and size locations = 'NO'
+Reset Pin Escapes (fanouts) = 'NO'
+Ripup Etch = 'NO'
+Reset custom drill data = 'NO'
+Symbol list file = 'C:/Users/ADMINI~1/AppData/Local/Temp/#Taaaadj03212.tmp'
+
+
+------ Library Paths ------
+PSMPATH =  D:\OneDrive\工作文件\git共用库\AllegroLib\PSMLib\ 
+
+PADPATH =  D:\OneDrive\工作文件\git共用库\AllegroLib\PADLib\ 
+
+
+------ Symbol Refresh Messages ------
+
+'INDC2520'  symbol refreshed successfully.
+
+
+------ Pad Stack Refresh Messages ------
+
+'SMDR0R80X2R20'  pad stack refreshed successfully.
+
+
+----- Symbol Update Summary ----
+
+Completed refreshing all symbols successfully.

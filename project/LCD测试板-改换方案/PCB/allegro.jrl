@@ -1,0 +1,26 @@
+\t (00:00:03) allegro 16.5 P003 (v16-5-13C) i86
+\t (00:00:03)     Journal start - Thu Jul 02 19:58:56 2015
+\t (00:00:03)         Host=WINDOWS-RB6TD7C User=Administrator Pid=7760 CPUs=4
+\t (00:00:03) 
+\t (00:00:04) Opening existing design...
+\d (00:00:04) Database opened: D:/OneDrive/工作文件/项目开发/虚拟现实头盔/硬件设计/LCD测试板-改换方案/PCB/lcdpower.brd
+\i (00:00:04) trapsize 2386
+\i (00:00:04) trapsize 2343
+\i (00:00:04) trapsize 2393
+\i (00:00:04) trapsize 2445
+\i (00:00:04) trapsize 2445
+\i (00:00:05) placementedit 
+\i (00:00:12) pick grid 1956.505 821.369
+\t (00:00:12) last pick:  1956.500  821.400
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out 1925.702 793.500
+\i (00:00:12) trapsize 4889
+\i (00:00:13) zoom in 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom in 1811.293 792.522
+\i (00:00:13) trapsize 2445
+\i (00:00:16) pick grid 1953.084 683.979
+\t (00:00:16) last pick:  1953.100  684.000
+\i (00:24:40) exit 
+\t (00:24:40)     Journal end - Thu Jul 02 20:23:33 2015

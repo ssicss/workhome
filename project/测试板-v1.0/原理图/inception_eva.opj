@@ -1,0 +1,210 @@
+(ExpressProject "inception_eva"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "e:\项目管理\git共用库\allegrolib\schlib\ssicss_schlib.olb"
+        (Type "Schematic Library"))
+      (File
+         "d:\onedrive\工作文件\git共用库\allegrolib\schlib\ssicss_schlib.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\inception_eva.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (OFFPAGELEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    ("CAP NP"
+      (FullPartName "CAP NP.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (R2
+      (FullPartName "R2.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (ZTA
+      (FullPartName "ZTA.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 4"
+      (FullPartName "HEADER 4.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    ("SW PUSHBUTTON"
+      (FullPartName "SW PUSHBUTTON.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (USB-CONNECTER
+      (FullPartName "USB-CONNECTER.Normal")
+      (LibraryName
+         "D:\ONEDRIVE\工作文件\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (OFFPAGELEFT-R
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (L3GD20
+      (FullPartName "L3GD20.Normal")
+      (LibraryName
+         "D:\ONEDRIVE\工作文件\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (LSM303DLHC
+      (FullPartName "LSM303DLHC.Normal")
+      (LibraryName
+         "D:\ONEDRIVE\工作文件\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (stm32f303cbt6/lqfp48
+      (FullPartName "stm32f303cbt6/lqfp48.Normal")
+      (LibraryName
+         "D:\ONEDRIVE\工作文件\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (TPS3125
+      (FullPartName "TPS3125.Normal")
+      (LibraryName "E:\项目管理\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("PHONEJACK STEREO SW"
+      (FullPartName "PHONEJACK STEREO SW.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CS4354
+      (FullPartName "CS4354.Normal")
+      (LibraryName "E:\项目管理\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (OSC-SM
+      (FullPartName "OSC-SM.Normal")
+      (LibraryName "E:\项目管理\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("SW MAG-SPDT"
+      (FullPartName "SW MAG-SPDT.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (GND_SIGNAL
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PHONEJACK
+      (FullPartName "PHONEJACK.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    ("PHONE JACK-O"
+      (FullPartName "PHONE JACK-O.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (SC4216HSETRT
+      (FullPartName "SC4216HSETRT.Normal")
+      (LibraryName "E:\项目管理\GIT共用库\ALLEGROLIB\SCHLIB\SSICSS_SCHLIB.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\inception_eva.dsn")
+      (Path "Design Resources" ".\inception_eva.dsn" "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "d:\onedrive\工作文件\git共用库\allegrolib\schlib\ssicss_schlib.olb")
+      (Select "Design Resources" ".\inception_eva.dsn" "SCHEMATIC1" "<1>COVER"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 1244 1866 0 902"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1721 75 599")
+        (Scroll "-314 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<1>COVER"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1746 100 624")
+        (Scroll "0 191")
+        (Zoom "110")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<2>BRIDGE_HDMI_MIPI"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 125 1771 125 649")
+        (Scroll "-316 0")
+        (Zoom "59")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<3>DISPLAY"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1796 150 674")
+        (Scroll "-316 0")
+        (Zoom "59")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<4>HDMI_ESD"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1821 175 699")
+        (Scroll "-316 0")
+        (Zoom "59")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<5>AUDIO"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1846 200 724")
+        (Scroll "-316 0")
+        (Zoom "59")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<6>POWER_SUPPORT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 225 1871 225 749")
+        (Scroll "-234 14")
+        (Zoom "71")
+        (Occurrence "/"))
+      (Path
+         "D:\ONEDRIVE\工作文件\项目开发\虚拟现实头盔\硬件设计\测试板-V1.0\原理图\INCEPTION_EVA.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "<7>MCU_SENSOR")))
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_16.5\tools\capture\library"))

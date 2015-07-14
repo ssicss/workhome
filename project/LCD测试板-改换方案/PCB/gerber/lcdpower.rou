@@ -1,0 +1,11 @@
+;EXTENTS: -3.937  -3.937  17.063  13.063  
+;LEADER: 12 
+;HEADER: 
+;CODE  : ASCII 
+;FILE  : lcdpower.rou for board lcdpower.brd
+%
+G90
+F1
+M16
+G40
+M30

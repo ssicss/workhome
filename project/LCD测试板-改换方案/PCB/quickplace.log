@@ -1,0 +1,38 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : lcdpower.brd                                  )
+(    Software Version : 16.5P003                                      )
+(    Date/Time        : Sat Jun 06 20:28:26 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  L1 / INDUCTOR_INDC2520_4R7UH / INDC2520 at (60.6082 38.7018)
+         Placed symbol:  L2 / INDUCTOR_INDC2520_4R7UH / INDC2520 at (60.6082 36.2986)
+         Placed symbol:  C1 / CAP NP_CAPC0805_10UF/CAPC0805 / CAPC0805 at (61.4782 34.3604)
+         Placed symbol:  C2 / CAP NP_CAPC0805_10UF/CAPC0805 / CAPC0805 at (61.4782 32.8872)
+         Placed symbol:  C4 / CAP NP_CAPC0805_10UF/CAPC0805 / CAPC0805 at (61.4782 31.4140)
+         Placed symbol:  C3 / CAP NP_CAPC0805_100NF/CAPC0603 / CAPC0805 at (61.4782 29.9408)
+         Placed symbol:  C5 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (61.2082 28.6901)
+         Placed symbol:  C6 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (61.2082 27.5580)
+         Placed symbol:  C7 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (61.2082 26.4259)
+         Placed symbol:  C8 / CAP NP_CAPC0603_1UF/CAPC0603 / CAPC0603 at (61.2082 25.2938)
+         Placed symbol:  D1 / BZX84C39/SOT_DO214AB_SS34 / DO214AB at (61.2082 21.5192)
+         Placed symbol:  D2 / LED_LEDM0603_RED/RESC0603 / LEDM0603 at (61.2750 17.7530)
+         Placed symbol:  L3 / INDUCTOR_IND470X470X280_10UH / IND470X470X280 at (61.2082 14.6326)
+         Placed symbol:  R1 / R2_RESC0603_100K/RESC0603 / RESC0603 at (61.2082 11.6669)
+         Placed symbol:  R6 / R2_RESC0603_100K/RESC0603 / RESC0603 at (61.2082 10.5348)
+         Placed symbol:  R2 / R2_RESC0603_10K/RESC0603 / RESC0603 at (61.2082 9.4027)
+         Placed symbol:  R3 / R2_RESC0603_10K/RESC0603 / RESC0603 at (61.2082 8.2706)
+         Placed symbol:  R4 / R2_RESC0603_8K/RESC0603 / RESC0603 at (61.2082 7.1385)
+         Placed symbol:  R5 / R2_RESC0603_510R/RESC0603 / RESC0603 at (61.2082 6.0064)
+
+
+Placed 19 of 19 applicable (19 total) symbols.
+
+-----------------------------------------------------------------------
+
